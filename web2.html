@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            My Information
+        </title>
+        <style>
+            .span
+                {
+                    color:rgb(42, 42, 190);
+                    text-align: center;
+                    text-weight: bolder;
+                    background-color: rgb(255, 191, 191);
+                }
+                
+            .ChangeTextColor
+                {
+                    text-align: center;
+                    animation: keyframe_Text 0.5s ease-in-out infinite;
+                }
+            @keyframes keyframe_Text {
+                0%, 100% {
+                    color :aquamarine;
+                }
+                20% {
+                    color:aqua;
+                }
+                40%{
+                    color:deepskyblue;
+                }
+                60% {
+                    color:dodgerblue;
+                }
+                80% {
+                    color:lightskyblue;
+                }
+            }
+
+            .ChangeBoxColor
+                {
+                    text-align: center;
+                    animation: keyframe_Box 0.5s ease-in-and-out infinite;
+                }
+            @keyframes keyframe_Box
+            {
+                0%,100% {
+                    
+                }
+            }
+        </style>
+        <h1 class = "span">
+            My name is Phawaris Klinsreesuk
+        </h1>
+    </head>
+    <body>
+        <h1 class ="ChangeColor"><center> I'm Good</center></h1><br>
+        <h2><center>มาจากโรงเรียนหอวัง กรุงเทพฯ</center></h2>
+        <a href="https://github.com/GooDu-dev/CESCa_16_Student"><br><center><img src ="image0.jpg" width="650" height="500"></center></a>
+        <br><center><textarea rows = "5">Text Here!</textarea></center><br>
+        <center><button id = "Comment">
+            Summit commend
+        </button></center>
+        <script>
+            document.getElementById("Comment").addEventListener("click", buttonclicked)
+
+            function buttonclicked()
+            {
+                window.alert("ขอบคุณสำหรับความคิดเห็น")
+            }
+        </script>
+    </body>
+</html>
